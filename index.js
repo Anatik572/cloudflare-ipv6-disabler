@@ -23,7 +23,7 @@ if (args.length != 3) {
         headers: {
             "X-Auth-Email": args[1],
             "Content-Type": "application/json",
-            "X-Auth-Key": args[1]
+            "X-Auth-Key": args[0]
         },
         data: {
             value: "off"
@@ -31,6 +31,8 @@ if (args.length != 3) {
     }, (err, res) => {
         if(res.body.success) {
             console.log("IPv6 disabled on your domain");
+        }else{
+            console.log(res.body);
         }
     });
 }
