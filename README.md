@@ -1,6 +1,6 @@
 ### CloudFlare IPV6 Disabler
  Description :
-   * -> Allow only the V6 ip on your site
+   * -> Allow only the V4 ip on your site
    * -> Autorisez uniquement l'ip V4 sur votre site
    
  ### Dependencies npm :
